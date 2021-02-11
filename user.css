@@ -1,0 +1,106 @@
+
+/* ---------------------------------------------------
+ * MAIN LAYOUT 
+ * ------------------------------------------------- */
+
+/* Change main colors */
+:root {
+    --main-color: #303136;
+    --background-color: #ececec;
+    --dark-main-color: #36c;
+}
+
+.container {
+	margin-top: 83px;
+}
+
+
+/* ---------------------------------------------------
+ * MENU 
+ * ------------------------------------------------- */
+
+#shaarli-menu {
+	max-height: 55px;
+}
+
+.pure-menu-item {
+	height: 55px;
+}
+
+.pure-menu-selected .pure-menu-link:visited, .pure-menu-selected .pure-menu-link, .pure-menu-link:visited, .pure-menu-link {
+	padding: 1.15em 1em;
+}
+
+.pure-menu-item:hover::after {
+	background: var(--background-color);
+}
+
+.linkcount {
+    right: 25px;
+}
+
+
+/* ---------------------------------------------------
+ * LINK CARDS 
+ * ------------------------------------------------- */
+
+/* Card Layout */
+
+.linklist-item {
+	box-shadow: none;
+	background: white;
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+
+.linklist-item-infos {
+	background: white;
+}
+
+.linklist-item-title {
+	background: white;
+}
+
+.linklist-item.private::before {
+	display: none;
+}
+
+/* Link Card Icons */
+
+/* Hide external link icon. */
+.linklist-real-url > i {
+	display: none;
+}
+
+.linklist-item-infos a {
+	color: #c6c6c6;
+}
+
+.edit-link {
+	color: #c6c6c6;
+}
+
+.delete-link {
+	color: #c6c6c6!important;
+}
+
+.delete-link:hover {
+	color: #d91414 !important;
+	transition: all 1s;
+}
+
+.pinned-link {
+	color: var(--dark-main-color)!important;
+}
+
+
+/* ---------------------------------------------------
+ * TOOLBAR 
+ * ------------------------------------------------- */
+
+.toolbar-plugin input[type="text"],
+.searchform-block input[type="text"] {
+	background: white;
+	box-shadow: none;
+}
+
