@@ -1,7 +1,6 @@
-
-/* ---------------------------------------------------
- * MAIN LAYOUT 
- * ------------------------------------------------- */
+/*---------------------------------------------------
+ MAIN LAYOUT 
+----------------------------------------------------*/
 
 /* Change main colors */
 :root {
@@ -15,9 +14,9 @@
 }
 
 
-/* ---------------------------------------------------
- * MENU 
- * ------------------------------------------------- */
+/*---------------------------------------------------
+ MENU
+----------------------------------------------------*/
 
 #shaarli-menu {
 	max-height: 55px;
@@ -40,9 +39,13 @@
 }
 
 
-/* ---------------------------------------------------
- * LINK CARDS 
- * ------------------------------------------------- */
+/*---------------------------------------------------
+ LINKLIST
+----------------------------------------------------*/
+
+#linklist {
+	margin-top: 35px;
+}
 
 /* Card Layout */
 
@@ -78,6 +81,7 @@
 
 .edit-link {
 	color: #c6c6c6;
+	transform: translateY(2px);
 }
 
 .delete-link {
@@ -86,17 +90,71 @@
 
 .delete-link:hover {
 	color: #d91414 !important;
-	transition: all 1s;
+	transition: all 0.8s;
 }
 
 .pinned-link {
 	color: var(--dark-main-color)!important;
 }
 
+.pin-link {
+	transform: translateY(2px);
+}
 
-/* ---------------------------------------------------
- * TOOLBAR 
- * ------------------------------------------------- */
+.pin-link:hover,
+.edit-link:hover {
+	color: var(--dark-main-color)!important;
+	transition: all 0.8s;
+}
+
+/* Tags */
+
+.linklist-item-tags {
+	padding-bottom: 5px;
+}
+
+.label-tag {
+	padding: 0 0 5px 0;
+}
+
+/* Make dots between tags disappear... */
+.linklist-item-infos .linklist-item-tags {
+	color: transparent;
+}
+
+.label-tag a {
+	color: var(--dark-main-color);
+	background: white;
+	border: 1px solid var(--dark-main-color);
+	border-radius: 2px;
+	padding: 2px 6px;
+	transition: all 0.25s;
+}
+
+.label-tag a:hover {
+	color: white;
+	background: var(--dark-main-color);
+}
+
+.linklist-item-tags .fa-tags {
+	display: none;
+}
+
+/* Bottom icons */
+
+.linklist-item-infos-controls-group {
+	border-right: none;
+}
+
+/* Make dots between icons disappear... */
+.linklist-item-infos .mobile-buttons {
+	color: transparent;	
+}
+
+
+/*---------------------------------------------------
+ TOOLBAR 
+----------------------------------------------------*/
 
 .toolbar-plugin input[type="text"],
 .searchform-block input[type="text"] {
