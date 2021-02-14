@@ -10,7 +10,7 @@
 }
 
 .container {
-	margin-top: 83px;
+	margin-top: 55px;
 }
 
 
@@ -26,7 +26,10 @@
 	height: 55px;
 }
 
-.pure-menu-selected .pure-menu-link:visited, .pure-menu-selected .pure-menu-link, .pure-menu-link:visited, .pure-menu-link {
+.pure-menu-selected .pure-menu-link:visited,
+.pure-menu-selected .pure-menu-link,
+.pure-menu-link:visited,
+.pure-menu-link {
 	padding: 1.15em 1em;
 }
 
@@ -36,8 +39,12 @@
 
 .linkcount {
     right: 25px;
+		top: 20px;
 }
-
+.subheader-form {
+	padding: 20px 0 10px 0;
+	background: var(--dark-main-color);
+}
 
 /*---------------------------------------------------
  LINKLIST
@@ -47,7 +54,36 @@
 	margin-top: 35px;
 }
 
-/* Card Layout */
+.search-linklist {
+	padding-top: 40px;
+}
+
+.pure-alert {
+	margin: 20px;
+}
+
+/* --- Navigation and filters --- */
+
+.linksperpage a {
+    border-radius: 2px;
+		width: 25px;
+}
+
+.linksperpage input[type="text"] {
+    padding: 5px 9px 3px 8px;
+		border-radius: 2px;
+}
+
+.linklist-filters-text,
+.linksperpage .pure-u-0 {
+	margin-right: 5px;
+}
+
+.linklist-filters {
+	border-radius: 2px;
+}
+
+/* --- Card Layout --- */
 
 .linklist-item {
 	box-shadow: none;
@@ -68,7 +104,7 @@
 	display: none;
 }
 
-/* Link Card Icons */
+/* --- Link Card Icons --- */
 
 /* Hide external link icon. */
 .linklist-real-url > i {
@@ -107,7 +143,7 @@
 	transition: all 0.8s;
 }
 
-/* Tags */
+/* --- Tags and icons --- */
 
 .linklist-item-tags {
 	padding-bottom: 5px;
