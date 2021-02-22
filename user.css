@@ -228,3 +228,28 @@
 	box-shadow: 1px 1px 1px #d8d8d8,-1px -1px 6px #d8d8d8,-1px 1px 2px #d8d8d8,1px -1px 2px #d8d8d8;
 }
 
+
+/*---------------------------------------------------
+ TAGCLOUD 
+----------------------------------------------------*/
+
+.tag-sort a {
+	border-radius: 2px;
+}
+
+.cloudtag-container a {
+ 	color: white;
+	display: inline-block;
+	background: var(--dark-main-color);
+	padding: 0.1em 0.3em;
+	border-radius: 3px;
+	margin: 0px 0px 8px 8px;
+}
+
+.cloudtag-container .count {
+	margin-left: -2px;
+	color: var(--dark-main-color);
+	background: transparent;
+	border: 1px solid var(--dark-main-color);
+	font-size: 0.7em;
+}
