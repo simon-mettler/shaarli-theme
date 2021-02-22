@@ -42,7 +42,7 @@
 		top: 20px;
 }
 .subheader-form {
-	padding: 20px 0 10px 0;
+	padding: 20px 0 20px 0;
 	background: var(--dark-main-color);
 }
 
@@ -187,6 +187,15 @@
 	color: transparent;	
 }
 
+/* --- Labels --- */
+
+.linklist-item-title .label-private {
+	border: none;	
+	color: white;
+	background: #0b5ea6;
+	padding: 4px 6px;
+}
+
 
 /*---------------------------------------------------
  TOOLBAR 
@@ -209,7 +218,8 @@
 	padding: 25px 0;
 }
 
-.page-form input[type="submit"] {
+.page-form input[type="submit"],
+.page-form .submit-buttons .button.button-red {
 	border-radius: 2px;
 	box-shadow: none;
 }
